@@ -80,6 +80,28 @@ input[class^=btn-]:hover {
   margin: 4rem 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.border-bottom {
+  height: 3px;
+  width: 3rem;
+  background-color: #ef6d6d;
+  margin: 0 auto 1rem auto;
+}
+
+.lead {
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -103,6 +125,37 @@ ul {
 
 img {
   width: 100%;
+}
+
+#home__a .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+#home__a .skills i {
+  color: #ef6d6d;
+  padding-bottom: 0.5rem;
+}
+#home__b .profile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home__b .profile li.title {
+  font-size: 1rem;
+}
+#home__b .profile li.number {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#home__b .profile div {
+  padding: 3rem 0;
+}
+#home__b .profile div:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+#home__b .profile div:nth-child(even) {
+  background-color: #ccc;
 }
 
 .main-nav {
@@ -142,7 +195,7 @@ img {
 }
 #header__home .header-content {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 10%;
 }
 #header__home h1 {
   font-size: 4rem;
