@@ -131,6 +131,32 @@ input[class^=btn-]:hover {
   text-align: center;
   background-color: goldenrod;
 }
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+#about-c .about-logos img {
+  width: 70%;
+}
+#about-d .references ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+#about-d .references p {
+  border: 1px solid #ccc;
+  padding: 2rem;
+}
+#about-d .references img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 0.5rem;
+}
 
 * {
   margin: 0;
@@ -244,10 +270,38 @@ img {
   background-color: #333;
 }
 
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  box-shadow: rgba(149, 154, 145, 0.2) 0px 8px 24px;
+  padding: 2rem;
+}
+.items .item {
+  position: relative;
+  overflow: hidden;
+}
+.items .item::after {
+  content: "";
+  position: absolute;
+  background-color: #333;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-120%) translateY(-120%) rotate(45deg);
+  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.items .item:hover::after {
+  transform: scale(2) translateX(-50%) translateY(-50%) rotate(45deg);
+  opacity: 0.4;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 .main-nav__logo {
   width: 70px;
