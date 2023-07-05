@@ -88,6 +88,7 @@ input[class^=btn-]:hover {
   font-size: 2rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .border-bottom {
@@ -100,6 +101,35 @@ input[class^=btn-]:hover {
 .lead {
   margin-bottom: 2rem;
   word-spacing: 2px;
+}
+
+#about-a .info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.2rem;
+}
+#about-a .info__image {
+  border: 1px solid #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+#about-a .info__bio {
+  border: 1px solid #f4f4f4;
+  padding: 0.8rem;
+}
+#about-b {
+  color: #fff;
+}
+#about-b .progress {
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+}
+#about-b .progress div {
+  height: 100%;
+  text-align: center;
+  background-color: goldenrod;
 }
 
 * {
@@ -259,6 +289,11 @@ img {
 }
 #header__home .typewrite {
   display: block;
+}
+#header__inner {
+  background: #333;
+  height: 5.5rem;
+  border: 3px solid #ef6d6d;
 }
 
 /*# sourceMappingURL=main.css.map */
